@@ -46,34 +46,18 @@ function changeColor() {
     timeEl.style.textShadow = "0 0 20px " + randomColor;
 }
 function saveTime() {
-    let timeText = document.getElementById("time").innerText;
+    const timeElement = document.getElementById("time");
+    const savedContainer = document.getElementById("saved-times");
 
-    let container = document.getElementById("saved-times");
-
-    let newTime = document.createElement("div");
-    newTime.innerText = timeText;
-
-    container.appendChild(newTime);
-}
-const timeElement = document.getElementById("time");
-const savedContainer = document.getElementById("saved-times");
-
-function saveTime() {
     const newTime = document.createElement("div");
 
     newTime.innerText = timeElement.innerText;
 
-    // 🎨 rangni olish (tepdagi soatdan)
     const color = window.getComputedStyle(timeElement).color;
     const shadow = window.getComputedStyle(timeElement).textShadow;
 
-    // 🎯 pastga qo‘llash
     newTime.style.color = color;
     newTime.style.textShadow = shadow;
 
     savedContainer.appendChild(newTime);
-}
-function resetTimes() {
-    const savedContainer = document.getElementById("saved-times");
-    savedContainer.innerHTML = "";
 }
