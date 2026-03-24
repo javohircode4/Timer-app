@@ -76,4 +76,4 @@ function saveTime() {
 function resetTimes() {
     const savedContainer = document.getElementById("saved-times");
     savedContainer.innerHTML = "";
-}22:24 24.03.2026
+}
