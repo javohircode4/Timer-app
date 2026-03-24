@@ -61,3 +61,7 @@ function saveTime() {
 
     savedContainer.appendChild(newTime);
 }
+function resetTimes() {
+    const savedContainer = document.getElementById("saved-times");
+    savedContainer.innerHTML = "";
+}
