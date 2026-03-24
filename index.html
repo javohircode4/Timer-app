@@ -10,18 +10,20 @@
     <p id="date"></p>
 
     <div class="card">
-       <div id="time"></div>
+        <div id="time"></div>
 
-<button onclick="changeColor()">Rangni o‘zgartir</button>
+        <button onclick="changeColor()">Rangni o‘zgartir</button>
+        <button onclick="saveTime()">Vaqtni saqlash</button>
 
-<!-- 🔥 YANGI TUGMA -->
-<button onclick="saveTime()">Vaqtni saqlash</button>
+        <div id="saved-times"></div>
 
-<!-- 🔽 SAQLANGAN VAQTLAR -->
-<div id="saved-times"></div>
-<button id="reset-btn" onclick="resetTimes()">
-    <img src="1. restar.png" alt="reset">
-    </button>
+        <button id="reset-btn" onclick="resetTimes()">
+            <img src="1. restar.png" alt="reset">
+        </button>
+    </div> <!-- 🔥 SHU YER MUHIM -->
+    
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
